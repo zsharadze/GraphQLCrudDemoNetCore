@@ -20,5 +20,7 @@ This is CRUD example with ASP.Net Core 8 and GraphQL.
 
 ![screenshot](https://github.com/zsharadze/GraphQLCrudDemoNetCore/blob/master/Capture4.png?raw=true)
 
+![screenshot](https://github.com/zsharadze/GraphQLCrudDemoNetCore/blob/master/Capture5.png?raw=true)
+
 ###### About me
 My name is Zviad Sharadze. I'm .Net Developer from Tbilisi, Georgia.
