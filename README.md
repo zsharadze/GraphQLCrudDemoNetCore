@@ -3,7 +3,8 @@ This is CRUD example with ASP.Net Core 8 and GraphQL.
 
 ## Features
 1. Add/Edit/Delete/Select employee entities.
-2. MS SQL Server as database.
+2. Entity Framework Core usage.
+3. MS SQL Server as database.
 
 ## Getting Started
 1. Open GraphQLCrudDemo.sln in Visual Studio.
