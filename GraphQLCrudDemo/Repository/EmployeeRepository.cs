@@ -37,9 +37,9 @@ namespace GraphQLCrudDemo.Repository
             return await _context.Employees.ToListAsync();
         }
 
-        public async Task<Employee> UpdateEmployeeAsync(int id, Employee updatedEmployee)
+        public async Task<Employee> UpdateEmployeeAsync(Employee updatedEmployee)
         {
-            var existingEmployee = await _context.Employees.FindAsync(id);
+            var existingEmployee = await _context.Employees.FindAsync(updatedEmployee.Id);
             if (existingEmployee != null)
             {
                 existingEmployee.Age = updatedEmployee.Age;
@@ -49,7 +49,7 @@ namespace GraphQLCrudDemo.Repository
                 return existingEmployee;
             }
             else
-                throw new Exception($"Employee with id {id} not found.");
+                throw new Exception($"Employee with id {updatedEmployee.Id} not found.");
         }
 
         public async Task<bool> DeleteEmployeeAsync(int id)

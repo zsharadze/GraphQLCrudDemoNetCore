@@ -13,12 +13,7 @@ namespace GraphQLCrudDemo.GraphQL
 
         public async Task<Employee> UpdateEmployee(Employee input, [Service] EmployeeRepository repository)
         {
-            var employeeToUpdate = await repository.GetEmployeeAsync(input.Id);
-            employeeToUpdate.Age = input.Age;
-            employeeToUpdate.Email = input.Email;
-            employeeToUpdate.FullName = input.FullName;
-            var updatedEmployee = await repository.UpdateEmployeeAsync(input.Id, employeeToUpdate);
-
+            var updatedEmployee = await repository.UpdateEmployeeAsync(input);
             return updatedEmployee;
         }
 
